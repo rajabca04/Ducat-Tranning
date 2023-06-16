@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="myform" id="myform"  class="sample" method="get" enctype="multipart/form-datau" action="">
+        <label for="name">Name: </label>
+
+        <input type="text" name="name" id="name" placeholder="Enter your name: " class="sample-example" required minlength="3" maxlength="30">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!--
+        
+        Attributes:--
+        
+        Name :- Name attribute works like a placeholder and can be use get value of any particular input element or form , name atribute value must be uniqe in each element
+
+        ID:- id atribute is use for following two purpuse..
+        1. It can be use to get value of input element or form.
+        2. id atribute is use to select an element to aplly some CSS or Javascript on purticular element , id atribute value must be uniqe in each element.
+
+        Class:- class atribute is use to select to aplly css or javascript on elements , we can use a single class in multiple element of multiple class in a single elements.
+
+        Action:- Action atribute is use to provide relative url of that particular page at witch we want to rerander after form submition, keep it blanck use as to redirect on same page.
+
+        Method:- The HTTP method that the browser uses to submit the form. Possible values are:
+        post: Corresponds to the HTTP POST method ; form data are included in the body of the form and sent to the server.
+        get: Corresponds to the HTTP GET method; form data are appended to the action attribute URI with a '?' as separator, and the resulting URI is sent to the server. Use this method when the form has no side-effects and contains only ASCII characters.
+
+        enctype:-When the value of the method attribute is post, enctype is the MIME type of content that is used to submit the form to the server. Possible values are...
+        application/x-www-form-urlencoded: The default value if the attribute is not specified.
+        multipart/form-data: The value used for an <input> element with the type attribute set to "file".
+        text/plain: (HTML5)
+        This value can be overridden by a formenctype attribute on a <button> or <input> element.
+
+        Label:- for attribute value of label element is used  to link a label with input element so for attribute value must be same as id attribute of input elements.
+
+        type:- example--- text, number , password, email, search, url , file, radio, checkbox, range, reset , button, submit , data, time, datetime-local, week, month , tel , color and etc...
+
+        placeholder:- placeholder attribute is used to provide a tamporry message in input element..
+
+     -->
+</body>
+</html>
