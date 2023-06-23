@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100vh;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: first baseline;
+            align-items: center;
+            justify-content: space-around;
+            justify-content: space-between  ;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            color: white;
+            display: grid;
+
+            place-items: center;
+
+        }
+        /* .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        } */
+        .box{
+            justify-content: space-around;  
+            margin-right: 5px;
+            background-color: blue;
+        }
+        #box1{
+            
+            background-color: rgb(114, 13, 30);
+        }
+        #box2{
+            background-color: rgb(48, 237, 209);
+        }
+        #box3{
+            background-color: rgb(46, 210, 65);
+        }
+        #box4{
+            background-color: rgb(171, 149, 220);
+        }
+        #box5{
+            background-color: rgb(59, 44, 44);
+        }
+        #box6{
+            background-color: rgb(52, 87, 91);
+        }
+        #box7{
+            background-color: rgb(165, 29, 163);
+        }
+        #box8{
+            background-color: rgb(149, 0, 255);
+        }
+        #box9{
+            background-color: rgb(109, 165, 136);
+        }
+        #box10{
+            background-color: rgb(243, 235, 88);
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="box" id="box4">box4</div>
+    <div class="box" id="box5">box5</div>
+    <div class="box" id="box6">box6</div>
+    <div class="box" id="box7">box7</div>
+    <div class="box" id="box8">box8</div>
+    <div class="box" id="box9">box9</div>
+    <div class="box" id="box10">box10</div>
+   </div>
+    
+</body>
+</html>

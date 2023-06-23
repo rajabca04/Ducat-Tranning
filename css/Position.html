@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position ststem</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 120vh;
+            height: 100vh;
+            background-color: blue;
+            display: grid;
+            align-items: center;
+            margin-left: 10%;
+        }
+        .center{
+            margin-left: 15%;
+            width: 70%;
+            height: 70%;
+            background-color: greenyellow;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            color: rgb(245, 214, 214);
+            display: inline-block;
+
+        }
+        #box1{
+            background-color: green;
+        }
+        #box2{
+            background-color: rgb(81, 83, 81);
+        }
+        #box3{
+            background-color: rgb(22, 202, 163);
+        }
+        #box4{
+            background-color: rgb(93, 66, 167);
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+        #box5{
+            background-color: rgb(123, 48, 145);
+            position: relative;
+            z-index: 2; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Position system in css
+        ------------------------
+        1. static
+        2. relative
+        3. absalute
+        4. fixed
+        5. sticky
+
+    -> position properties spacify the type of positing mathed used for an element
+
+        1. Static :- By difult all html elements are positioned static by difult that means
+        static position element are not effected by top buttom left and right propertis
+        * these element always positioned acourding to the normal flow of the page..
+
+        2. Relative :- An element with position relative is positioned relative to it's normal position satting the top buttom and left right properties will cause it to the adjested 
+        away from it's normal postions , outher element will not be adjested to fit into any gape 
+        laft by the elements.
+
+        3. Absalute :- An element with postion absalute is positioned relative to the nearest position ansisters if an element hase no positon ansisters it use the doucument body.
+        and move aloung with page scrolling , absulate position element are removed form the normal flow an can overlape outher element
+        
+        4. fixed :- An element with position  relative to the view port which means it always stay in the same page even if page is scrooled
+        A fixed element do't leve the gape it is complitlly flow normal flow and
+        fixed element will overlap outher elements
+        top buttom left right propertis is use to position the element
+
+        5. stycky :- An element with position sticky is positioned based one the user scroll positions , A sticky element togels b/w relative and fixed position
+        
+    -->
+    
+    <div class="main">
+        <div class="center">
+            <div class="box" id="box1">box1</div>
+            <div class="box" id="box2">box2</div>
+            <div class="box" id="box3">box3</div>
+            <div class="box" id="box4">box4</div>
+            <div class="box" id="box5">box5</div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
