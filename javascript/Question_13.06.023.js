@@ -118,16 +118,52 @@ Output is. Area = 78.5
     //     i++ 
     // }
 
-    var num = Number(prompt("enter no."))
-    for(let i = 1;i<=10;i++){
-        document.write(`<p>${num} * ${num} = ${num*i} <br></p>`)
-    }
+    // var num = Number(prompt("enter no."))
+    // for(let i = 1;i<=10;i++){
+    //     document.write(`<p>${num} * ${num} = ${num*i} <br></p>`)
+    // }
 
-    var start = Number(prompt("Enter the range start from"))
-    var end = Number(prompt("Enter End :"))
+    // var start = Number(prompt("Enter the range start from"))
+    // var end = Number(prompt("Enter End :"))
 
-    var sum = 0
-    for(let i = start; i<=end;i++){
-        sum = sum+i
+    // var sum = 0
+    // for(let i = start; i<=end;i++){
+    //     sum = sum+i
+    // }
+    // document.write(`sum = ${sum}`)
+
+    //Fibonaci series...
+
+    // var a = 0
+    // var b = 1
+    // var num = Number(prompt("Enter your fbonaci no"))
+    // var sum = a + b
+    // document.write(`${a} ${b}`)
+    // while(sum<=num){
+      
+    //     document.write(`${sum}`)
+    //     a = b
+    //     b = sum
+    //     sum = a+b
+    // }
+
+// sum of number
+    // var num = Number(prompt("Enter the Number:"))
+    // var sum = 0
+    // while(num!=0){
+    //     let r = num%10
+    //     sum = sum +r
+    //     num = parseInt(num/10)
+    // }
+    // document.write(`sum = ${sum}`)
+
+// reverse the number
+
+    var num = Number(prompt("Enter your num.."))
+    var rev = 0 
+    while(num!=0){          //123
+        let r = num %10     // 3
+        rev = rev*10+r      // 0 *10+3
+        num = parseInt(num/10)
     }
-    document.write(`sum = ${sum}`)
+    document.write(`reverse = ${rev}`)
