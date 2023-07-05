@@ -159,11 +159,93 @@ Output is. Area = 78.5
 
 // reverse the number
 
-    var num = Number(prompt("Enter your num.."))
-    var rev = 0 
-    while(num!=0){          //123
-        let r = num %10     // 3
-        rev = rev*10+r      // 0 *10+3
-        num = parseInt(num/10)
-    }
-    document.write(`reverse = ${rev}`)
+    // var num = Number(prompt("Enter your num.."))
+    // var rev = 0 
+    // while(num!=0){          //123
+    //     let r = num %10     // 3
+    //     rev = rev*10+r      // 0 *10+3
+    //     num = parseInt(num/10)
+    // }
+    // document.write(`reverse = ${rev}`)
+
+
+
+
+    // function sample(){
+    //     if(true){
+    //         a = 10
+    //         var b= 20
+    //         let c = 30
+    //         const d = 40
+    //         console.log(`a = ${a} b = ${b} c = ${c} d = ${d}`)
+
+    //     }
+    //     console.log(`a = ${a} b= ${b}`);
+    // }
+    // sample()
+    // console.log(`a = ${a}`);
+    // function example(){
+    //     console.log(`In example function a = ${a}`);
+    // }
+    // example()
+
+
+    // let a = 10 
+    // const b = 20
+    // a++
+    // b++
+    // console.log(a,b)
+
+    // var a = 10
+    // var a = 20
+    // console.log(a);
+
+    // let a = 10
+    // let a = 20
+    // console.log(a)
+
+    // var a = 10
+
+    // function sample(){
+    //     let a = 20
+    //     console.log(`In sample() a = ${a}`)
+    // }
+
+    // sample()
+    // console.log(`Outside sample a = ${a}`)
+
+
+    // for(var a = 1; a<=10; a++);
+    // console.log(a);
+
+    // for(let a = 1; a<=10; a++);
+    // console.log(a);
+
+
+
+    // # Recursion
+
+    // let a = 0
+    // function sample(){
+    // let a = 0
+
+    //     a++
+    //     console.log("In sample function")   
+    //     if(a>5)
+    //     sample()
+    //     console.log("Back to sample function");
+    // }
+    // console.log("In main Global scope");
+    // sample()
+    // console.log("Back to main Global scope");
+
+    // function sample(a=1){
+    //     console.log("In sample function")
+    //     if(a<5)
+    //     sample(++a)
+    //     console.log("Back to sample fucntion")
+    // }
+
+    // console.log("In main Globle scope")
+    // sample()
+    // console.log("Back to main Globle function")
