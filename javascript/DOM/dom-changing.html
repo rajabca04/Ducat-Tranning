@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+        }
+        .card{
+            display: flex;
+            background-color: aqua;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.5s;
+
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="main">
+        <div class="card">
+            <Button id="btn"  onclick="fun()">Change/reset</Button>
+
+            <p id = "para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi veritatis laboriosam ea laborum et aliquam ab quibusdam repellendus placeat nulla, dolore recusandae quae neque vitae rerum deleniti dignissimos pariatur. Quos sit maiores vitae exercitationem perspiciatis vel ad dolores suscipit dolore eveniet delectus necessitatibus aut amet, illo quisquam et dolorem corrupti iusto saepe aperiam temporibus. 
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var text1 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi veritatis laboriosam ea laborum et aliquam ab quibusdam repellendus placeat nulla, dolore recusandae quae neque vitae rerum deleniti dignissimos pariatur. Quos sit maiores vitae exercitationem perspiciatis vel ad dolores suscipit dolore eveniet delectus necessitatibus aut amet, illo quisquam et dolorem corrupti iusto saepe aperiam temporibus. ";
+
+        var text2 = "Iste dolores velit aspernatur minima soluta quibusdam consequuntur debitis quam sapiente quidem. Earum voluptatibus maiores nihil culpa tempore corrupti, sequi dolore, aperiam fugit laboriosam explicabo quibusdam laborum eum neque molestias iusto quo natus distinctio harum nulla! Molestiae quasi, eaque cumque iusto officia reprehenderit hic distinctio? Odit."
+        var para = document.getElementById("para");
+        var btn = document.getElementById("btn");
+        var body = document.getElementById("body");
+
+        var flag = 2
+        function fun(){
+            if(flag == 1){
+                para.innerHTML = text1;
+                para.style.color = "blue";
+                btn.style.backgroundColor = "green";
+                body.style.backgroundColor = "black";
+                flag = 2;
+            }
+            else{
+                para.innerHTML = text2;
+                para.style.color = "red";
+                btn.style.backgroundColor = "pink";
+                body.style.backgroundColor = "white";
+                flag = 1;
+            }
+
+        }
+    </script>
+</body>
+</html>
